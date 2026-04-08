@@ -7,40 +7,37 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <nav className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo */}
           <a href="/" className="font-serif text-2xl tracking-wide text-foreground">
-            Wabi
+            А &amp; М
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
             <a
-              href="#philosophy"
+              href="#story"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Философия
+              Наша история
             </a>
             <a
-              href="#services"
+              href="#details"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Услуги
+              Детали
             </a>
             <a
-              href="#process"
+              href="#schedule"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Процесс
+              Программа
             </a>
             <a
-              href="#contact"
+              href="#rsvp"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Контакты
+              RSVP
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden flex flex-col gap-1.5 p-2"
@@ -58,38 +55,37 @@ export function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-500 ease-out ${isMenuOpen ? "max-h-64 pb-8" : "max-h-0"}`}
         >
           <div className="flex flex-col gap-6 pt-4">
             <a
-              href="#philosophy"
+              href="#story"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Философия
+              Наша история
             </a>
             <a
-              href="#services"
+              href="#details"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Услуги
+              Детали
             </a>
             <a
-              href="#process"
+              href="#schedule"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Процесс
+              Программа
             </a>
             <a
-              href="#contact"
+              href="#rsvp"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Контакты
+              RSVP
             </a>
           </div>
         </div>

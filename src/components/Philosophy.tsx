@@ -22,32 +22,29 @@ export function Philosophy() {
   }, [])
 
   return (
-    <section ref={sectionRef} id="philosophy" className="py-32 lg:py-40 px-6 lg:px-12">
+    <section ref={sectionRef} id="story" className="py-32 lg:py-40 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Image */}
           <div
             className={`relative aspect-[4/5] bg-sand overflow-hidden transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
             <img
-              src="/minimalist-japanese-interior-design-with-natural-w.jpg"
-              alt="Минималистичный интерьер с натуральным деревом"
+              src="https://cdn.poehali.dev/projects/da91541f-48af-408a-b11f-cf799f076b98/files/fccd5ad9-cf1c-49d8-bba4-ea1c0ea2d318.jpg"
+              alt="Цветочная композиция для свадьбы"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* Overlay accent */}
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-terracotta/80" />
           </div>
 
-          {/* Content */}
           <div className="lg:pl-8">
             <p
               className={`text-xs tracking-[0.3em] uppercase text-terracotta mb-6 transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Наша философия
+              Наша история
             </p>
 
             <h2
@@ -55,10 +52,10 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Искусство
-              <span className="italic"> осознанной</span>
+              Два пути,
+              <span className="italic"> один</span>
               <br />
-              жизни
+              горизонт
             </h2>
 
             <div
@@ -67,33 +64,31 @@ export function Philosophy() {
               }`}
             >
               <p>
-                Мы верим, что каждое пространство таит в себе потенциал для преображения. Не через добавление,
-                а через бережное вычитание — открывая то, что всегда было предначертано.
+                Мы познакомились пять лет назад — случайно и в то же время совершенно закономерно.
+                С тех пор каждый день стал немного светлее.
               </p>
               <p>
-                Наш подход вдохновлён японской концепцией <em className="text-foreground">ма</em> — глубокой
-                красотой пустоты — и скандинавским пониманием
-                <em className="text-foreground"> хюгге</em>, этого ощущения уютного умиротворения.
+                Наша свадьба — не просто торжество. Это момент, когда мы говорим друг другу «да» в присутствии тех,
+                кто важен нам больше всего. И мы хотим, чтобы вы были рядом.
               </p>
             </div>
 
-            {/* Stats */}
             <div
               className={`grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-border transition-all duration-1000 delay-700 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">12</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет опыта</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">5</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет вместе</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">140+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Проектов</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">14.06</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Дата свадьбы</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">8</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Наград</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">∞</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Впереди</p>
               </div>
             </div>
           </div>
